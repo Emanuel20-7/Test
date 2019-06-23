@@ -1,11 +1,11 @@
 ---
 - name: Haproxy Config Backend
-  hosts: lb01
+  hosts: Frontends
   become: yes
 
   vars:
-    server: app.b2cloud.com.ar
-    privateip: 172.100.0.6
+    server: app01
+    privateip: 192.168.122.8
     backend: app_webserver01
 
   tasks:
@@ -61,3 +61,4 @@
       systemd:
         state: restarted
         name: haproxy
+   - name: nandnandamo
