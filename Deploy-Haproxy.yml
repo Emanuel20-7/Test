@@ -1,6 +1,6 @@
 ---
 - name: Haproxy Config Backend
-  hosts: Frontends
+  hosts: Balancers
   become: yes
 
   vars:
