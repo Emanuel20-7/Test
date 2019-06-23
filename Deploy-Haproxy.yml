@@ -61,4 +61,3 @@
       systemd:
         state: restarted
         name: haproxy
-   - name: nandnandamo
